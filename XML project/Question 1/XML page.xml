@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Name of the file: XML page.xml
+Name of the author: Lario Truter
+Date created: 15 February 2023
+Operating system: Windows 10
+Version: 10
+Description of the code: Five items with five child elements.
+-->
+<artists>
+	<ateez>		<!-- Items -->	
+		<groupName> Ateez </groupName>		<!-- Child element -->
+	
+		<debutAlbum> Treasure Ep.1: All to Zero </debutAlbum>		
+		
+		<price> $10.48 </price>
+		
+		<debut> 24 October 2018 </debut>
+		
+		<genre> K-pop, Hip hop, Trap, EDM </genre>
+		
+		<ateezCover>Images/Ateez.jpg</ateezCover>
+	</ateez>
+
+	<oneus>
+		<groupName> Oneus </groupName>
+	
+		<debutAlbum> Light Us </debutAlbum>
+		
+		<price>	$36.77 </price>
+		
+		<debut>	9 January 2019 </debut>
+		
+		<genre> K-pop, Pop </genre>
+
+		<oneusCover> Images/Oneus.jpg </oneusCover>
+	</oneus>
+	
+	<strayKids>
+		<groupName> Stray Kids </groupName>
+	
+		<debutAlbum> I Am NOT </debutAlbum>
+		
+		<price> $25.53 </price>
+		
+		<debut>	25 March 2018 </debut>
+		
+		<genre> K-pop, Hip hop, EDM </genre>	
+		
+		<strayKidsCover> Images/Stray Kids.jpg	</strayKidsCover>		
+	</strayKids>
+	
+	<treasure>
+		<groupName> Treasure </groupName>
+	
+		<debutAlbum> The First Step: Chapter One </debutAlbum>
+		
+		<price> $23.99 </price>
+		
+		<debut> 7 August 2020 </debut>
+		
+		<genre> K-pop, Hip hop, Dance </genre>	
+		
+		<treasureCover> Images/Treasure.png </treasureCover>
+	</treasure>
+	
+	<txt>
+		<groupName> TXT </groupName>
+	
+		<debutAlbum> The Dream Chapter: Star </debutAlbum>
+		
+		<price>	$21.99 </price>
+		
+		<debut> 4 March 2019 </debut>
+		
+		<genre> K-pop, Hip hop, Tropical house </genre>
+		
+		<txtCover> Images/Txt.png </txtCover>
+	</txt>
+</artists>

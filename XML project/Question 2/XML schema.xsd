@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--
+Name of the file: XML schema.xsd
+Name of the author: Lario Truter
+Date created: 20 February 2023
+Operating system: Windows 10
+Version: 10
+Description of the code: Validates XML data.
+-->
+	<xsd:element name="musicPlace" type="MusicPlaceType"/>
+		<xsd:complexType name="MusicPlaceType">		<!-- Definition of complex elements -->
+			<xsd:sequence>
+				<xsd:element name="slogan" type="xsd:string"/>		<!-- Definition of simple elements -->
+				<xsd:element name="artists" type="ArtistType" />
+			</xsd:sequence>
+		</xsd:complexType>
+		
+		<xsd:complexType name="ArtistType">
+			<xsd:element name="group" type="GroupDetails" />
+		</xsd:complexType>
+		
+		<xsd:complexType name="GroupDetails">
+			<xsd:sequence>
+				<xsd:element name="groupName" type="xsd:string"/>
+				<xsd:element name="debutAlbum" type="xsd:string"/>
+				
+				<xsd:element name="price">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:decimal">
+							<xsd:minInclusive value="10.0"/>		<!-- Minimum value must be 10.0 -->
+						</xsd:restriction>
+					</xsd:simpleType>
+				</xsd:element>
+				
+				<xsd:element name="debut" type="xsd:string"/>
+				<xsd:element name="genre" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>		
+</xsd:schema>

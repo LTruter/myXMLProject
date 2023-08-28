@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Name of the file: HTML page.html
+Name of the author: Lario Truter
+Date created: 20 February 2023
+Operating system: Windows 10
+Version: 10
+Description of the code: XML data displayed in table using JavaScript. HTML styled with internal CSS. 
+Button to call a function that calculates the total number of items in the table.
+-->
+<html>
+	<head>
+		<title> Music Store </title>
+		<style>			/* Internal stylesheet */
+		#display{		/* CSS for table id */
+			margin-top: 50px;
+			margin-bottom: 20px;
+			width: 80%;
+			height: 500px;
+			border: 1px solid black;
+			background-color: #ffffff;
+		}
+
+		th,td{			/* CSS for table header tag and table data tag */
+			text-align: center;
+			border: 1px solid black;
+		}
+		
+		th{				/* CSS for table header tag */
+		background-color: #e0e0eb;
+		}
+
+		body{			/* CSS for body tag */
+			font-size: 20px;
+			margin:0px;
+			background-color: #cce0ff;
+		}
+		
+		footer{			/* CSS for footer tag */
+			padding-bottom:10px; 
+			padding-top:10px; 
+			margin-top: 190px;
+			background-color: #80bfff;
+		}
+		</style>
+	</head>
+	
+	<body>
+		<center>
+			<h1> TOP ARTISTS </h1>
+			<p><b> Our top selling artists: </b></p>
+			
+			<table id="display">	<!-- XML displayed in table -->
+				<tr>
+					<th> Group Name </th>
+					<th> Debut Album </th>
+					<th> Price </th>
+					<th> Debut </th>
+					<th> Genre </th>
+				</tr>
+				<script type="text/javascript" src="JavaScript.js"></script>	<!-- Inline JavaScript -->
+				<tr>
+					<td colspan="5"> Total Number Items Displayed: 
+					<span id="counter"><button onclick="total()"> <!-- Button to display total number of items of displayed --> Click me </button></span></td>
+				</tr>
+			</table>
+			<footer> &copy Copyright Lario Truter 2023 </footer>
+		</center>
+	</body>
+</html>

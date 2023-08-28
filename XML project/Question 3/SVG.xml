@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Name of the file: SVG.xml
+Name of the author: Lario Truter
+Date created: 23 February 2023
+Operating system: Windows 10
+Version: 10
+Description of the code: Four different shapes with different colours moving along two different paths.
+-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/svg/1.1/DTD/svg11.dtd">		<!-- XML declaration -->
+
+<svg xmlns="http://www.w3.org/2000/svg">	 <!-- XML namespace for document -->
+    <title> My Shapes </title>
+    <circle r="80px" cx="200px" cy="200px" style="fill: #ff9933;">		<!-- Properties of the circle -->
+		<animateMotion							
+			path="M0,-70 q700,400 -200,600"
+			begin="0s" dur="10s" repeatCount="indefinite"/>		<!-- Path specifies the route the shape will move along -->
+	</circle>
+	
+	<rect x="100px" y="200px" width="200" height="100" style="fill: #ff4d4d;">		<!-- Properties of the rectangle -->
+		<animateMotion
+			path="M0,-70 q700,400 -200,600"
+			begin="3s" dur="10s" repeatCount="indefinite"/>
+	</rect>
+	
+	<ellipse cx="1450px" cy="100px" rx="100" ry="40" style="fill: #00cc44;">		<!-- Properties of the ellipse -->
+		<animateMotion
+              path="M0,0 q-700,400 200,600"
+              begin="0s" dur="10s" repeatCount="indefinite"/>
+	</ellipse>
+	 
+	<rect x="1400px" y="100px" width="150" height="150" style="fill: #00b8e6;">		<!-- Properties of the square -->
+		<animateMotion
+              path="M0,0 q-700,400 200,600"
+              begin="3s" dur="10s" repeatCount="indefinite"/>
+	</rect>
+</svg>
+
